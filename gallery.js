@@ -36,7 +36,7 @@ xhr.onreadystatechange = () => {
         for (let i = 0; i < 50; i++) {
             output += `
             <div class="item" data-aos="zoom-in">
-            <a href=${response[i].thumbnailUrl} target="_blank" >
+            <a href=./${response[i].thumbnailUrl} target="_blank" >
             <img style="width: 100%;" src=${response[i].url} />
             </a>
             <h3>${response[i].title}</h3>
