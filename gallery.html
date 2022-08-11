@@ -4,65 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo gallery UI</title>
+    <title>Photo gallery</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <section>
         <div class="container">
             <div class="header">
-                    <h1 class="logo">PhotoGallery</h1>
-                    <ul class="list" id="liste">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
+                <h1 class="logo">PhotoGallery</h1>
+                <ul class="list" id="liste">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                </ul>
             </div>
-            <div id="home">
-                <h1>Home</h1>
+            <div id="home" class="home">
+                <h1>Picture Gallery</h1>
+
             </div>
             <div class="gallery" id="gallery">
-                <!-- <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/4816319/pexels-photo-4816319.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, porro!</h3>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/2598024/pexels-photo-2598024.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, velit!</h3>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/1122409/pexels-photo-1122409.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, velit!</h3>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/3373303/pexels-photo-3373303.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, velit!</h3>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/4674175/pexels-photo-4674175.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, velit!</h3>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="https://images.pexels.com/photos/4850291/pexels-photo-4850291.jpeg" alt="image">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, velit!</h3>
-                    </a>
-                </div>
-            </div> -->
+
             </div>
+
+            <a class="load-more">Load More</a>
+            <div class="upload">
+                <h1>Want To Add A Post?</h1>
+                <input type="file" id="real-file" hidden="hidden" />
+                <button type="button" id="custom-button">CHOOSE A FILE</button>
+                <span id="custom-text">No file chosen, yet.</span>
+                </disv>
     </section>
-    <script src="gallery.js"></script>
+    <footer style="position:relative; bottom:100px;">
+        <div class="footer" id="footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Nikshay Mohla <strong></strong>. All Rights Reserved</p>
+                        <div class="credits">
+                            Designed by Nikshay Mohla</a>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/gallery.js"></script>
 </body>
 
 </html>
